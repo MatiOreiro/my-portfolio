@@ -1,0 +1,100 @@
+﻿@model IEnumerable<Obligatorio.DTOs.DTOs.DTOEnvio.EnvioDTO>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Envíos</h1>
+
+<p>
+    <a asp-action="Create">Crear nuevo envío</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Id)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TipoEnvio)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.NroTracking)
+            </th>
+
+            <th>
+                @Html.DisplayNameFor(model => model.NombreFuncionario)
+            </th>
+
+            <th>
+                @Html.DisplayNameFor(model => model.NombreCliente)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.EmailCliente)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Peso)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Estado)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Valor)
+            </th>
+
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model) {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Id)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.TipoEnvio)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.NroTracking)
+                </td>
+
+                <td>
+                    @Html.DisplayFor(modelItem => item.NombreFuncionario)
+                </td>
+
+                <td>
+                    @Html.DisplayFor(modelItem => item.NombreCliente)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.EmailCliente)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Peso)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Estado)
+                </td>
+                @if(item.Valor != null)
+                {
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Valor)
+                    </td>
+                }
+                else{
+                <td>
+                    "N/D"
+                </td>
+                }
+
+                @if(item.Estado == "EN_PROCESO")
+                {
+                    <td>
+                        @Html.ActionLink("Agregar comentario", "AgregarSeguimiento", new {  id=item.Id  }) |
+                        @Html.ActionLink("Detalles", "Details", new { id = item.Id }) |
+                        @Html.ActionLink("Finalizar", "FinalizarEnvio", new { id = item.Id })
+                    </td>
+                    
+                }
+        </tr>
+}
+    </tbody>
+</table>

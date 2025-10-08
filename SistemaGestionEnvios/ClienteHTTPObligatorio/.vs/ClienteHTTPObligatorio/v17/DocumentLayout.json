@@ -1,0 +1,274 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\matia\\Desktop\\ORT\\Programaci\u00F3n 3\\Obligatorio\\ClienteHTTPObligatorio\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{F7E1BEC0-02F4-48DE-9EF6-D144EF1742F9}|ClienteHTTPObligatorio\\ClienteHTTPObligatorio.csproj|c:\\users\\matia\\desktop\\ort\\programaci\u00F3n 3\\obligatorio\\clientehttpobligatorio\\clientehttpobligatorio\\views\\envio\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F7E1BEC0-02F4-48DE-9EF6-D144EF1742F9}|ClienteHTTPObligatorio\\ClienteHTTPObligatorio.csproj|solutionrelative:clientehttpobligatorio\\views\\envio\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F7E1BEC0-02F4-48DE-9EF6-D144EF1742F9}|ClienteHTTPObligatorio\\ClienteHTTPObligatorio.csproj|c:\\users\\matia\\desktop\\ort\\programaci\u00F3n 3\\obligatorio\\clientehttpobligatorio\\clientehttpobligatorio\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F7E1BEC0-02F4-48DE-9EF6-D144EF1742F9}|ClienteHTTPObligatorio\\ClienteHTTPObligatorio.csproj|solutionrelative:clientehttpobligatorio\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F7E1BEC0-02F4-48DE-9EF6-D144EF1742F9}|ClienteHTTPObligatorio\\ClienteHTTPObligatorio.csproj|c:\\users\\matia\\desktop\\ort\\programaci\u00F3n 3\\obligatorio\\clientehttpobligatorio\\clientehttpobligatorio\\views\\envio\\enviosporfechas.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F7E1BEC0-02F4-48DE-9EF6-D144EF1742F9}|ClienteHTTPObligatorio\\ClienteHTTPObligatorio.csproj|solutionrelative:clientehttpobligatorio\\views\\envio\\enviosporfechas.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F7E1BEC0-02F4-48DE-9EF6-D144EF1742F9}|ClienteHTTPObligatorio\\ClienteHTTPObligatorio.csproj|c:\\users\\matia\\desktop\\ort\\programaci\u00F3n 3\\obligatorio\\clientehttpobligatorio\\clientehttpobligatorio\\views\\envio\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F7E1BEC0-02F4-48DE-9EF6-D144EF1742F9}|ClienteHTTPObligatorio\\ClienteHTTPObligatorio.csproj|solutionrelative:clientehttpobligatorio\\views\\envio\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F7E1BEC0-02F4-48DE-9EF6-D144EF1742F9}|ClienteHTTPObligatorio\\ClienteHTTPObligatorio.csproj|c:\\users\\matia\\desktop\\ort\\programaci\u00F3n 3\\obligatorio\\clientehttpobligatorio\\clientehttpobligatorio\\controllers\\enviocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F7E1BEC0-02F4-48DE-9EF6-D144EF1742F9}|ClienteHTTPObligatorio\\ClienteHTTPObligatorio.csproj|solutionrelative:clientehttpobligatorio\\controllers\\enviocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F7E1BEC0-02F4-48DE-9EF6-D144EF1742F9}|ClienteHTTPObligatorio\\ClienteHTTPObligatorio.csproj|c:\\users\\matia\\desktop\\ort\\programaci\u00F3n 3\\obligatorio\\clientehttpobligatorio\\clientehttpobligatorio\\controllers\\usuariocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F7E1BEC0-02F4-48DE-9EF6-D144EF1742F9}|ClienteHTTPObligatorio\\ClienteHTTPObligatorio.csproj|solutionrelative:clientehttpobligatorio\\controllers\\usuariocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F7E1BEC0-02F4-48DE-9EF6-D144EF1742F9}|ClienteHTTPObligatorio\\ClienteHTTPObligatorio.csproj|c:\\users\\matia\\desktop\\ort\\programaci\u00F3n 3\\obligatorio\\clientehttpobligatorio\\clientehttpobligatorio\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F7E1BEC0-02F4-48DE-9EF6-D144EF1742F9}|ClienteHTTPObligatorio\\ClienteHTTPObligatorio.csproj|solutionrelative:clientehttpobligatorio\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F7E1BEC0-02F4-48DE-9EF6-D144EF1742F9}|ClienteHTTPObligatorio\\ClienteHTTPObligatorio.csproj|c:\\users\\matia\\desktop\\ort\\programaci\u00F3n 3\\obligatorio\\clientehttpobligatorio\\clientehttpobligatorio\\models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F7E1BEC0-02F4-48DE-9EF6-D144EF1742F9}|ClienteHTTPObligatorio\\ClienteHTTPObligatorio.csproj|solutionrelative:clientehttpobligatorio\\models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F7E1BEC0-02F4-48DE-9EF6-D144EF1742F9}|ClienteHTTPObligatorio\\ClienteHTTPObligatorio.csproj|c:\\users\\matia\\desktop\\ort\\programaci\u00F3n 3\\obligatorio\\clientehttpobligatorio\\clientehttpobligatorio\\models\\tokenresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F7E1BEC0-02F4-48DE-9EF6-D144EF1742F9}|ClienteHTTPObligatorio\\ClienteHTTPObligatorio.csproj|solutionrelative:clientehttpobligatorio\\models\\tokenresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F7E1BEC0-02F4-48DE-9EF6-D144EF1742F9}|ClienteHTTPObligatorio\\ClienteHTTPObligatorio.csproj|c:\\users\\matia\\desktop\\ort\\programaci\u00F3n 3\\obligatorio\\clientehttpobligatorio\\clientehttpobligatorio\\models\\seguimientodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F7E1BEC0-02F4-48DE-9EF6-D144EF1742F9}|ClienteHTTPObligatorio\\ClienteHTTPObligatorio.csproj|solutionrelative:clientehttpobligatorio\\models\\seguimientodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F7E1BEC0-02F4-48DE-9EF6-D144EF1742F9}|ClienteHTTPObligatorio\\ClienteHTTPObligatorio.csproj|c:\\users\\matia\\desktop\\ort\\programaci\u00F3n 3\\obligatorio\\clientehttpobligatorio\\clientehttpobligatorio\\models\\logindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F7E1BEC0-02F4-48DE-9EF6-D144EF1742F9}|ClienteHTTPObligatorio\\ClienteHTTPObligatorio.csproj|solutionrelative:clientehttpobligatorio\\models\\logindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F7E1BEC0-02F4-48DE-9EF6-D144EF1742F9}|ClienteHTTPObligatorio\\ClienteHTTPObligatorio.csproj|c:\\users\\matia\\desktop\\ort\\programaci\u00F3n 3\\obligatorio\\clientehttpobligatorio\\clientehttpobligatorio\\models\\enviodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F7E1BEC0-02F4-48DE-9EF6-D144EF1742F9}|ClienteHTTPObligatorio\\ClienteHTTPObligatorio.csproj|solutionrelative:clientehttpobligatorio\\models\\enviodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F7E1BEC0-02F4-48DE-9EF6-D144EF1742F9}|ClienteHTTPObligatorio\\ClienteHTTPObligatorio.csproj|c:\\users\\matia\\desktop\\ort\\programaci\u00F3n 3\\obligatorio\\clientehttpobligatorio\\clientehttpobligatorio\\models\\cambiarcontraseniadto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F7E1BEC0-02F4-48DE-9EF6-D144EF1742F9}|ClienteHTTPObligatorio\\ClienteHTTPObligatorio.csproj|solutionrelative:clientehttpobligatorio\\models\\cambiarcontraseniadto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F7E1BEC0-02F4-48DE-9EF6-D144EF1742F9}|ClienteHTTPObligatorio\\ClienteHTTPObligatorio.csproj|c:\\users\\matia\\desktop\\ort\\programaci\u00F3n 3\\obligatorio\\clientehttpobligatorio\\clientehttpobligatorio\\views\\envio\\enviosporcomentario.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F7E1BEC0-02F4-48DE-9EF6-D144EF1742F9}|ClienteHTTPObligatorio\\ClienteHTTPObligatorio.csproj|solutionrelative:clientehttpobligatorio\\views\\envio\\enviosporcomentario.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F7E1BEC0-02F4-48DE-9EF6-D144EF1742F9}|ClienteHTTPObligatorio\\ClienteHTTPObligatorio.csproj|c:\\users\\matia\\desktop\\ort\\programaci\u00F3n 3\\obligatorio\\clientehttpobligatorio\\clientehttpobligatorio\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F7E1BEC0-02F4-48DE-9EF6-D144EF1742F9}|ClienteHTTPObligatorio\\ClienteHTTPObligatorio.csproj|solutionrelative:clientehttpobligatorio\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 12,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "CambiarContraseniaDTO.cs",
+              "DocumentMoniker": "C:\\Users\\matia\\Desktop\\ORT\\Programaci\u00F3n 3\\Obligatorio\\ClienteHTTPObligatorio\\ClienteHTTPObligatorio\\Models\\CambiarContraseniaDTO.cs",
+              "RelativeDocumentMoniker": "ClienteHTTPObligatorio\\Models\\CambiarContraseniaDTO.cs",
+              "ToolTip": "C:\\Users\\matia\\Desktop\\ORT\\Programaci\u00F3n 3\\Obligatorio\\ClienteHTTPObligatorio\\ClienteHTTPObligatorio\\Models\\CambiarContraseniaDTO.cs",
+              "RelativeToolTip": "ClienteHTTPObligatorio\\Models\\CambiarContraseniaDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-24T00:50:47.084Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "UsuarioController.cs",
+              "DocumentMoniker": "C:\\Users\\matia\\Desktop\\ORT\\Programaci\u00F3n 3\\Obligatorio\\ClienteHTTPObligatorio\\ClienteHTTPObligatorio\\Controllers\\UsuarioController.cs",
+              "RelativeDocumentMoniker": "ClienteHTTPObligatorio\\Controllers\\UsuarioController.cs",
+              "ToolTip": "C:\\Users\\matia\\Desktop\\ORT\\Programaci\u00F3n 3\\Obligatorio\\ClienteHTTPObligatorio\\ClienteHTTPObligatorio\\Controllers\\UsuarioController.cs",
+              "RelativeToolTip": "ClienteHTTPObligatorio\\Controllers\\UsuarioController.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAQwA0AAACHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-24T00:38:23.641Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "C:\\Users\\matia\\Desktop\\ORT\\Programaci\u00F3n 3\\Obligatorio\\ClienteHTTPObligatorio\\ClienteHTTPObligatorio\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "ClienteHTTPObligatorio\\Controllers\\AuthController.cs",
+              "ToolTip": "C:\\Users\\matia\\Desktop\\ORT\\Programaci\u00F3n 3\\Obligatorio\\ClienteHTTPObligatorio\\ClienteHTTPObligatorio\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "ClienteHTTPObligatorio\\Controllers\\AuthController.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAA8AAACHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-24T00:35:05.659Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "EnviosPorFechas.cshtml",
+              "DocumentMoniker": "C:\\Users\\matia\\Desktop\\ORT\\Programaci\u00F3n 3\\Obligatorio\\ClienteHTTPObligatorio\\ClienteHTTPObligatorio\\Views\\Envio\\EnviosPorFechas.cshtml",
+              "RelativeDocumentMoniker": "ClienteHTTPObligatorio\\Views\\Envio\\EnviosPorFechas.cshtml",
+              "ToolTip": "C:\\Users\\matia\\Desktop\\ORT\\Programaci\u00F3n 3\\Obligatorio\\ClienteHTTPObligatorio\\ClienteHTTPObligatorio\\Views\\Envio\\EnviosPorFechas.cshtml",
+              "RelativeToolTip": "ClienteHTTPObligatorio\\Views\\Envio\\EnviosPorFechas.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-24T00:26:40.006Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\matia\\Desktop\\ORT\\Programaci\u00F3n 3\\Obligatorio\\ClienteHTTPObligatorio\\ClienteHTTPObligatorio\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "ClienteHTTPObligatorio\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\matia\\Desktop\\ORT\\Programaci\u00F3n 3\\Obligatorio\\ClienteHTTPObligatorio\\ClienteHTTPObligatorio\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "ClienteHTTPObligatorio\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAcwB0AAAB8AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-23T22:22:11.25Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "SeguimientoDTO.cs",
+              "DocumentMoniker": "C:\\Users\\matia\\Desktop\\ORT\\Programaci\u00F3n 3\\Obligatorio\\ClienteHTTPObligatorio\\ClienteHTTPObligatorio\\Models\\SeguimientoDTO.cs",
+              "RelativeDocumentMoniker": "ClienteHTTPObligatorio\\Models\\SeguimientoDTO.cs",
+              "ToolTip": "C:\\Users\\matia\\Desktop\\ORT\\Programaci\u00F3n 3\\Obligatorio\\ClienteHTTPObligatorio\\ClienteHTTPObligatorio\\Models\\SeguimientoDTO.cs",
+              "RelativeToolTip": "ClienteHTTPObligatorio\\Models\\SeguimientoDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-24T00:54:04.749Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "C:\\Users\\matia\\Desktop\\ORT\\Programaci\u00F3n 3\\Obligatorio\\ClienteHTTPObligatorio\\ClienteHTTPObligatorio\\Views\\Envio\\Details.cshtml",
+              "RelativeDocumentMoniker": "ClienteHTTPObligatorio\\Views\\Envio\\Details.cshtml",
+              "ToolTip": "C:\\Users\\matia\\Desktop\\ORT\\Programaci\u00F3n 3\\Obligatorio\\ClienteHTTPObligatorio\\ClienteHTTPObligatorio\\Views\\Envio\\Details.cshtml",
+              "RelativeToolTip": "ClienteHTTPObligatorio\\Views\\Envio\\Details.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEUAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-25T12:36:46.176Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "TokenResponse.cs",
+              "DocumentMoniker": "C:\\Users\\matia\\Desktop\\ORT\\Programaci\u00F3n 3\\Obligatorio\\ClienteHTTPObligatorio\\ClienteHTTPObligatorio\\Models\\TokenResponse.cs",
+              "RelativeDocumentMoniker": "ClienteHTTPObligatorio\\Models\\TokenResponse.cs",
+              "ToolTip": "C:\\Users\\matia\\Desktop\\ORT\\Programaci\u00F3n 3\\Obligatorio\\ClienteHTTPObligatorio\\ClienteHTTPObligatorio\\Models\\TokenResponse.cs",
+              "RelativeToolTip": "ClienteHTTPObligatorio\\Models\\TokenResponse.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-24T00:55:14.261Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "EnvioController.cs",
+              "DocumentMoniker": "C:\\Users\\matia\\Desktop\\ORT\\Programaci\u00F3n 3\\Obligatorio\\ClienteHTTPObligatorio\\ClienteHTTPObligatorio\\Controllers\\EnvioController.cs",
+              "RelativeDocumentMoniker": "ClienteHTTPObligatorio\\Controllers\\EnvioController.cs",
+              "ToolTip": "C:\\Users\\matia\\Desktop\\ORT\\Programaci\u00F3n 3\\Obligatorio\\ClienteHTTPObligatorio\\ClienteHTTPObligatorio\\Controllers\\EnvioController.cs",
+              "RelativeToolTip": "ClienteHTTPObligatorio\\Controllers\\EnvioController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAACHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-19T19:42:01.321Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\matia\\Desktop\\ORT\\Programaci\u00F3n 3\\Obligatorio\\ClienteHTTPObligatorio\\ClienteHTTPObligatorio\\Views\\Envio\\Index.cshtml",
+              "RelativeDocumentMoniker": "ClienteHTTPObligatorio\\Views\\Envio\\Index.cshtml",
+              "ToolTip": "C:\\Users\\matia\\Desktop\\ORT\\Programaci\u00F3n 3\\Obligatorio\\ClienteHTTPObligatorio\\ClienteHTTPObligatorio\\Views\\Envio\\Index.cshtml",
+              "RelativeToolTip": "ClienteHTTPObligatorio\\Views\\Envio\\Index.cshtml",
+              "ViewState": "AgIAACIAAAAAAAAAAIAwwDMAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-19T22:09:02.55Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "EnvioDTO.cs",
+              "DocumentMoniker": "C:\\Users\\matia\\Desktop\\ORT\\Programaci\u00F3n 3\\Obligatorio\\ClienteHTTPObligatorio\\ClienteHTTPObligatorio\\Models\\EnvioDTO.cs",
+              "RelativeDocumentMoniker": "ClienteHTTPObligatorio\\Models\\EnvioDTO.cs",
+              "ToolTip": "C:\\Users\\matia\\Desktop\\ORT\\Programaci\u00F3n 3\\Obligatorio\\ClienteHTTPObligatorio\\ClienteHTTPObligatorio\\Models\\EnvioDTO.cs",
+              "RelativeToolTip": "ClienteHTTPObligatorio\\Models\\EnvioDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-24T00:51:28.384Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ErrorViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\matia\\Desktop\\ORT\\Programaci\u00F3n 3\\Obligatorio\\ClienteHTTPObligatorio\\ClienteHTTPObligatorio\\Models\\ErrorViewModel.cs",
+              "RelativeDocumentMoniker": "ClienteHTTPObligatorio\\Models\\ErrorViewModel.cs",
+              "ToolTip": "C:\\Users\\matia\\Desktop\\ORT\\Programaci\u00F3n 3\\Obligatorio\\ClienteHTTPObligatorio\\ClienteHTTPObligatorio\\Models\\ErrorViewModel.cs",
+              "RelativeToolTip": "ClienteHTTPObligatorio\\Models\\ErrorViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-24T00:52:38.242Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "LoginDTO.cs",
+              "DocumentMoniker": "C:\\Users\\matia\\Desktop\\ORT\\Programaci\u00F3n 3\\Obligatorio\\ClienteHTTPObligatorio\\ClienteHTTPObligatorio\\Models\\LoginDTO.cs",
+              "RelativeDocumentMoniker": "ClienteHTTPObligatorio\\Models\\LoginDTO.cs",
+              "ToolTip": "C:\\Users\\matia\\Desktop\\ORT\\Programaci\u00F3n 3\\Obligatorio\\ClienteHTTPObligatorio\\ClienteHTTPObligatorio\\Models\\LoginDTO.cs",
+              "RelativeToolTip": "ClienteHTTPObligatorio\\Models\\LoginDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-24T00:52:50.51Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "EnviosPorComentario.cshtml",
+              "DocumentMoniker": "C:\\Users\\matia\\Desktop\\ORT\\Programaci\u00F3n 3\\Obligatorio\\ClienteHTTPObligatorio\\ClienteHTTPObligatorio\\Views\\Envio\\EnviosPorComentario.cshtml",
+              "RelativeDocumentMoniker": "ClienteHTTPObligatorio\\Views\\Envio\\EnviosPorComentario.cshtml",
+              "ToolTip": "C:\\Users\\matia\\Desktop\\ORT\\Programaci\u00F3n 3\\Obligatorio\\ClienteHTTPObligatorio\\ClienteHTTPObligatorio\\Views\\Envio\\EnviosPorComentario.cshtml",
+              "RelativeToolTip": "ClienteHTTPObligatorio\\Views\\Envio\\EnviosPorComentario.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-24T00:16:41.464Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\matia\\Desktop\\ORT\\Programaci\u00F3n 3\\Obligatorio\\ClienteHTTPObligatorio\\ClienteHTTPObligatorio\\Program.cs",
+              "RelativeDocumentMoniker": "ClienteHTTPObligatorio\\Program.cs",
+              "ToolTip": "C:\\Users\\matia\\Desktop\\ORT\\Programaci\u00F3n 3\\Obligatorio\\ClienteHTTPObligatorio\\ClienteHTTPObligatorio\\Program.cs",
+              "RelativeToolTip": "ClienteHTTPObligatorio\\Program.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAgwB0AAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-09T19:43:07.359Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

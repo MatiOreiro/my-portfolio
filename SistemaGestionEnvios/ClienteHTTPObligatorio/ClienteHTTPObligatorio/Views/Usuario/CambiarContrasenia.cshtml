@@ -1,0 +1,38 @@
+﻿@model ClienteHTTPObligatorio.Models.CambiarContraseniaDTO
+
+@{
+    ViewData["Title"] = "CambiarContrasenia";
+}
+
+<h1>CambiarContrasenia</h1>
+
+<h4>CambiarContraseniaDTO</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="CambiarContrasenia">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="AnteriorContrasenia" class="control-label"></label>
+                <input asp-for="AnteriorContrasenia" class="form-control" />
+                <span asp-validation-for="AnteriorContrasenia" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="NuevaContrasenia" class="control-label"></label>
+                <input asp-for="NuevaContrasenia" class="form-control" />
+                <span asp-validation-for="NuevaContrasenia" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

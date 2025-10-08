@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Obligatorio Programación 1</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <script src="js/clases.js"></script>
+    <script src="js/funciones.js"></script>
+</head>
+<body>
+    <h1>Obligatorio</h1>
+    <section id="sectionInicial">
+        <h2>Iniciar sesión</h2>
+        <form id="formIniciarSesion">
+            <label for="userName" >UserName: </label>
+            <input type="text" id="userName" value="matioreiro"> <br>
+            <label for="contraseña" >Contraseña: </label>
+            <input type="password" id="password" value="Mo1891"> <br>
+            <input type="button" value="Iniciar sesión" id="btnIniciarSesion">
+        </form>
+        <br><br>
+        <h2>Registrarse</h2>
+        <form id="formRegistrar">
+            <label for="registroDeNombre">Nombre: </label>
+            <input type="text" id="registroDeNombre"> <br>
+            <label for="registroDeApellido">Apellido: </label>
+            <input type="text" id="registroDeApellido"> <br>
+            <label for="registroDeUserName">UserName: </label>
+            <input type="text" id="registroDeUserName"> <br>
+            <label for="registroDeContraseña">Contraseña: </label>
+            <input type="password" id="registroDeContraseña"> <br>
+            <label for="registroDeNumeroDeTarjeta">Numero de tarjeta: </label>
+            <input type="text" id="registroDeNumeroDeTarjeta" placeholder="XXXX-XXXX-XXXX-XXXX"> <br>
+            <label for="registroDeCVC">CVC: </label>
+            <input type="text" id="registroDeCVC" placeholder="XXX"> <br>
+            <input type="button" value="Registrarse" id="btnRegistro">
+        </form>
+        <p id="pContraseniaValida"></p>
+    </section>
+    <section id="sectionComprador">
+        <h2>Comprador</h2>
+        <label for="selectProductosDisponibles"><strong>Productos: </strong></label>
+        <select id="selectProductosDisponibles">
+
+        </select><br>
+        <input type="checkbox" id="checkProdEnOferta">
+        <label for="checkProdEnOferta">Solo ofertas</label><br><br>
+        <div id="muestraDelProductoSeleccionado">
+        
+        </div>
+        <label for="cantProducto">Cantidad: </label>
+        <input type="number" id="cantProducto">
+        <input type="button" value="Comprar" id="btnComprarProducto"> <br><br>
+
+        <h3>Mis compras</h3>
+        <input type="radio" name="radioFiltrarMisCompras" id="radioFiltrarMisComprasTodas" checked>
+        <label for="radioFiltrarMisComprasTodas">Todas</label>
+        <input type="radio" name="radioFiltrarMisCompras" id="radioFiltrarMisComprasAprobadas">
+        <label for="radioFiltrarMisComprasAprobadas">Aprobadas</label>
+        <input type="radio" name="radioFiltrarMisCompras" id="radioFiltrarMisComprasPendientes">
+        <label for="radioFiltrarMisComprasPendientes">Pendientes</label>
+        <input type="radio" name="radioFiltrarMisCompras" id="radioFiltrarMisComprasCanceladas">
+        <label for="radioFiltrarMisComprasCanceladas">Canceladas</label>
+        <table>
+            <thead>
+                <tr>
+                    <th>Producto</th>
+                    <th>Precio total</th>
+                    <th>Cantidad</th>
+                    <th>Estado</th>
+                    <th>Acciones</th>
+                </tr>
+            </thead>
+            <tbody id="tablaDeMisCompras">
+
+            </tbody>
+        </table><br>
+        <p id="parrafoDeComprasAprobadas"></p>
+        <p id="parrafoSaldoDelComprador"></p>
+        <input type="button" value="Cerrar sesión" id="btnCerrarSesion">
+
+    </section>
+    <section id="sectionAdministrador">
+        <h2>Admin</h2>
+        <h3>Lista de compras de los usuarios</h3>
+        <input type="radio" name="radioFiltrarComprasDeUsuario" id="radioFiltrarComprasDeUsuarioTodas" checked>
+        <label for="radioFiltrarComprasDeUsuarioTodas">Todas</label>
+        <input type="radio" name="radioFiltrarComprasDeUsuario" id="radioFiltrarComprasDeUsuarioAprobadas">
+        <label for="radioFiltrarComprasDeUsuarioAprobadas">Aprobadas</label>
+        <input type="radio" name="radioFiltrarComprasDeUsuario" id="radioFiltrarComprasDeUsuarioPendientes">
+        <label for="radioFiltrarComprasDeUsuarioPendientes">Pendientes</label>
+        <input type="radio" name="radioFiltrarComprasDeUsuario" id="radioFiltrarComprasDeUsuarioCanceladas">
+        <label for="radioFiltrarComprasDeUsuarioCanceladas">Canceladas</label>
+        <table>
+            <thead>
+                <tr>
+                    <th>Comprador</th>
+                    <th>Producto</th>
+                    <th>Precio total</th>
+                    <th>Cantidad</th>
+                    <th>Estado</th>
+                    <th>Acciones</th>
+                </tr>
+            </thead>
+            <tbody id="tablaDeComprasDeUsuarios">
+
+            </tbody>
+        </table><br><br>
+        <h3>Crear productos</h3>
+        <form id="formCrearProducto">
+            <label for="nombreCrearProducto">Ingrese el nombre del producto</label>
+            <input type="text" id="nombreCrearProducto"><br>
+            <label for="precioCrearProducto">Ingrese el precio del producto</label>
+            <input type="text" id="precioCrearProducto"><br>
+            <label for="descripcionCrearProducto">Ingrese la descripción del producto</label>
+            <input type="text" id="descripcionCrearProducto"><br>
+            <label for="imagenCrearProducto">Seleccione una imagen de producto</label>
+            <select id="imagenCrearProducto">
+                <option value="imagenes/futbol.jpg">Pelota de futbol</option>
+                <option value="imagenes/basket.jpg">Pelota de basket</option>
+                <option value="imagenes/voley.jpg">Pelota de voley</option>
+                <option value="imagenes/golf.avif">Pelota de golf</option>
+                <option value="imagenes/bowling.webp">Pelota de bowling</option>
+                <option value="imagenes/tenis.webp">Pelota de tenis</option>
+                <option value="imagenes/pingpong.webp">Caja de pelotas de ping pong</option>
+                <option value="imagenes/futsal.webp">Pelota de futsal</option>
+                <option value="imagenes/padel.webp">Pelota de padel</option>
+                <option value="imagenes/pool.webp">Bolas de pool</option>
+                <option value="imagenes/rugby.jpg">Pelota de rugby</option>
+                <option value="imagenes/futbolamericano.webp">Pelota de futbol americano</option>
+                <option value="imagenes/waterpolo.webp">Pelota de waterpolo</option>
+                <option value="imagenes/pilates.webp">Pelota de pilates</option>
+                <option value="imagenes/beisbol.webp">Pelota de beisbol</option>
+            </select><br>
+            <label for="stockCrearProducto">Ingrese el stock del producto</label>
+            <input type="number" id="stockCrearProducto"><br>
+            <input type="button" value="Crear Producto" id="btnCrearProducto">
+        </form>
+        <p id="pErroresCrearProducto"></p> <br><br>
+        <h3>Administrar productos</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Producto</th>
+                    <th>Precio</th>
+                    <th>Stock</th>
+                    <th>Modificar stock</th>
+                    <th>Estado</th>
+                    <th>Modificar estado</th>
+                    <th>Oferta</th>
+                    <th>Modificar oferta</th>
+                </tr>
+            </thead>
+            <tbody id="tablaDeTodosLosProductos">
+
+            </tbody>
+        </table> <br> <br>
+        <h3>Ver informe de ganancias</h3>
+        <p id="pInformeDeGanancias"></p> <br><br>
+        <input type="button" value="Cerrar sesión" id="btnCerrarSesionAdministrador">
+    </section>
+</body>
+</html>

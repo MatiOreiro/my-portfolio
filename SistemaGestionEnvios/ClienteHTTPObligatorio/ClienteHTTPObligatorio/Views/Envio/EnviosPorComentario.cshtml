@@ -1,0 +1,121 @@
+﻿@model IEnumerable<ClienteHTTPObligatorio.Models.EnvioDTO>
+
+@{
+    ViewData["Title"] = "EnviosPorComentario";
+}
+
+<h1>Envíos filtrados por palabra</h1>
+
+<form asp-action="EnviosPorComentario" method="post" class="mb-4">
+    <div class="row">
+        <div class="col-md-9">
+            <label for="palabra">Palabra clave</label>
+            <input type="text" name="palabra" class="form-control" required />
+        </div>
+        <div class="col-md-3 d-flex align-items-end">
+            <button type="submit" class="btn btn-primary w-100">Buscar</button>
+        </div>
+    </div>
+</form>
+
+
+@if (Model != null && Model.Any())
+{
+    <h4>Envíos</h4>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.TipoEnvio)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Id)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.NroTracking)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.IdFuncionario)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.NombreFuncionario)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.IdCliente)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.NombreCliente)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.EmailCliente)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Peso)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Estado)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Direccion)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Valor)
+                </th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.TipoEnvio)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Id)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.NroTracking)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.IdFuncionario)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.NombreFuncionario)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.IdCliente)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.NombreCliente)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.EmailCliente)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Peso)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Estado)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Direccion)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Valor)
+                    </td>
+                    <td>
+                        @Html.ActionLink("Detalles", "Details", new { item.Id })
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+
+}
+else if (Model != null)
+{
+    <div class="alert alert-info">
+        No se encontraron envíos con esa palabra.
+    </div>
+}

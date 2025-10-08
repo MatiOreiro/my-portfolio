@@ -1,0 +1,67 @@
+﻿@model Obligatorio.MVC.Models.AltaEnvioViewModel
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1>Crear un nuevo envío</h1>
+
+<h4>Ingrese los datos</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Dto.MailCliente" class="control-label"></label>
+                <input asp-for="Dto.MailCliente" class="form-control" />
+                <span asp-validation-for="Dto.MailCliente" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Dto.Peso" class="control-label"></label>
+                <input asp-for="Dto.Peso" class="form-control" />
+                <span asp-validation-for="Dto.Peso" class="text-danger"></span>
+            </div>
+            <div>
+                <label>Tipo de envío</label>
+                <select asp-for="@Model.Dto.TipoEnvio" asp-items="Model.TipoEnvio">
+                </select>
+            </div>
+
+            <div id="opcionesComun">
+                <div class="form-group">
+                    <label>Agencia</label>
+                    <select asp-for="@Model.Dto.IdAgencia" asp-items="Model.Agencias">
+                        <option value="">Seleccione una Agencia</option>
+
+                    </select>
+                </div>
+            </div>
+            <div id="opcionesUrgente">
+                <div class="form-group">
+                    <label asp-for="Dto.Direccion" class="control-label"></label>
+                    <input asp-for="Dto.Direccion" class="form-control" />
+                    <span asp-validation-for="Dto.Direccion" class="text-danger"></span>
+                </div>
+
+            </div>
+
+
+            <div class="form-group">
+                <input type="submit" value="Crear" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Volver a la lista</a>
+</div>
+
+@ViewBag.msg
+
+<script src="/js/Envio/Create.js"></script>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

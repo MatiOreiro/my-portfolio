@@ -1,0 +1,12 @@
+#sectionComprador, #sectionAdministrador{
+    display: none;
+}
+
+table, th, td{
+    border: 1px solid black;
+}
+
+img{
+    width: 200px;
+    height: auto;
+}

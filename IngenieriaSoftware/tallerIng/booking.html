@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es-UY">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reservar un turno | Barbería Estilo Clásico</title>
+  <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+  <header>
+    <h1>Reservar un turno</h1>
+    <nav>
+      <a href="index.html">Volver al inicio</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="reserva-container">
+      <form id="bookingForm">
+        <h2>Completa tu reserva</h2>
+
+        <label for="servicioSelect">Servicio:</label>
+        <select id="servicioSelect" required></select>
+
+        <label for="barberoSelect">Barbero:</label>
+        <select id="barberoSelect" required></select>
+
+        <label for="fecha">Fecha:</label>
+        <input type="date" id="fecha" required min="" />
+        <small class="form-helper-text">
+          Solo se pueden hacer reservas para fechas futuras
+        </small>
+
+        <label for="horaSelect">Hora:</label>
+        <select id="horaSelect" required>
+          <option value="">Seleccione una fecha primero</option>
+        </select>
+        <small class="form-helper-text">
+          Horarios disponibles: 9:00 - 20:30 (cada 30 minutos)
+        </small>
+
+        <label for="celCliente">Celular:</label>
+        <input type="text" id="celCliente" placeholder="Celular" required />
+
+        <label for="mailCliente">Mail:</label>
+        <input type="text" id="mailCliente" placeholder="Mail" required />
+
+        <label for="nombreCliente">Nombre Cliente:</label>
+        <input type="text" id="nombreCliente" placeholder="Nombre Cliente" />
+
+        <button type="submit" class="main-action-btn">Reservar</button>
+
+        <div id="bookingFeedback"></div>
+      </form>
+    </section>
+  </main>
+
+
+  <script type="module" src="app.js"></script>
+<script type="module" src="booking.js"></script>
+
+</body>
+</html> 

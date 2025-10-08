@@ -1,0 +1,17 @@
+﻿@model Obligatorio.DTOs.DTOs.DTOEnvio.EnvioDTO
+
+@{
+    ViewData["Title"] = "FinalizarEnvio";
+}
+
+<h1>Finalizar envio @Model.Id</h1>
+
+<h3>Finalizar el envío?</h3>
+<div>
+    <hr />
+    
+    <form asp-action="FinalizarEnvio">
+        <input type="submit" value="Finalizar" class="btn btn-danger" /> |
+        <a asp-action="Index">Volver a lista</a>
+    </form>
+</div>

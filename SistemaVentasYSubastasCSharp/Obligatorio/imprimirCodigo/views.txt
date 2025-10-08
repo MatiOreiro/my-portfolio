@@ -1,0 +1,415 @@
+﻿***********************************
+Archivo: _ViewImports.cshtml
+Carpeta: C:\Users\matia\Desktop\ORT\Programación 2\Obligatorio\Obligatorio\Web\Views\_ViewImports.cshtml
+***********************************
+@using Web
+@using Web.Models
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+
+***********************************
+Archivo: _ViewStart.cshtml
+Carpeta: C:\Users\matia\Desktop\ORT\Programación 2\Obligatorio\Obligatorio\Web\Views\_ViewStart.cshtml
+***********************************
+@{
+    Layout = "_Layout";
+}
+
+***********************************
+Archivo: IndexAdmin.cshtml
+Carpeta: C:\Users\matia\Desktop\ORT\Programación 2\Obligatorio\Obligatorio\Web\Views\Administrador\IndexAdmin.cshtml
+***********************************
+
+@{
+    ViewData["Title"] = "IndexAdmin";
+}
+
+<h1>Bienvenido Administrador</h1>
+
+
+***********************************
+Archivo: VerSubastas.cshtml
+Carpeta: C:\Users\matia\Desktop\ORT\Programación 2\Obligatorio\Obligatorio\Web\Views\Administrador\VerSubastas.cshtml
+***********************************
+@model List<Obligatorio.Subasta>
+
+@{
+    ViewData["Title"] = "VerSubastas";
+}
+
+<h1>Todas las subastas</h1>
+
+@if (Model != null && Model.Count > 0)
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Nombre</th>
+                <th>Fecha</th>
+                <th>Estado</th>
+                <th>Precio</th>
+                <th></th>
+            </tr>
+        </thead>
+
+        <tbody>
+            @foreach (Obligatorio.Subasta subasta in Model)
+            {
+                <tr>
+                    <td>@subasta.nombre</td>
+                    <td>@subasta.fecha.ToShortDateString()</td>
+                    <td>@subasta.estado</td>
+                    <td>@subasta.CalcularPrecio()</td>
+                    @if (subasta.estado.Trim().ToUpper() == "ABIERTA" && subasta is Obligatorio.Subasta)
+                    {
+                        <td>
+                            <a href="/Subasta/CerrarSubasta/@(subasta.id)" class="btn btn-primary">Cerrar subasta</a>
+                        </td>
+                    }
+                    @if (subasta.estado.Trim().ToUpper() == "CERRADA" && subasta is Obligatorio.Subasta)
+                    {
+                        <td>
+                            <p>Subasta cerrada</p>
+                        </td>
+                    }
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+else
+{
+    <p>No existen publicaciones</p>
+}
+***********************************
+Archivo: CargarSaldo.cshtml
+Carpeta: C:\Users\matia\Desktop\ORT\Programación 2\Obligatorio\Obligatorio\Web\Views\Cliente\CargarSaldo.cshtml
+***********************************
+
+@{
+    ViewData["Title"] = "CargarSaldo";
+}
+
+<h1>Carga de saldo</h1>
+
+<form method="post">
+    <label for="monto">Monto</label>
+    <input type="number" name="monto">
+    <br>
+    <input type="submit" class="btn btn-primary" value="Cargar">
+</form>
+
+@ViewBag.Mensaje
+***********************************
+Archivo: IndexCliente.cshtml
+Carpeta: C:\Users\matia\Desktop\ORT\Programación 2\Obligatorio\Obligatorio\Web\Views\Cliente\IndexCliente.cshtml
+***********************************
+@{
+    ViewData["Title"] = "IndexCliente";
+}
+
+<h1>@ViewBag.Mensaje</h1>
+<p>@ViewBag.Saldo</p>
+
+***********************************
+Archivo: Registro.cshtml
+Carpeta: C:\Users\matia\Desktop\ORT\Programación 2\Obligatorio\Obligatorio\Web\Views\Cliente\Registro.cshtml
+***********************************
+
+@{
+    ViewData["Title"] = "Registro";
+}
+
+<h1>Registrarse</h1>
+<form method="post">
+    <div class="form-group">
+        <label for="nombre">Nombre</label>
+        <input type="text" class="form-control" id="nombre" name="nombre" />
+    </div>
+    <div class="form-group">
+        <label for="apellido">Apellido</label>
+        <input type="text" class="form-control" id="apellido" name="apellido" />
+    </div>
+    <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" class="form-control" id="email" name="email" />
+    </div>
+    <div class="form-group">
+        <label for="password">Contraseña</label>
+        <input type="password" class="form-control" id="password" name="password" />
+    </div>
+    <br>
+    <input type="submit" class="btn btn-primary" value="Registrar"></input>
+</form>
+@ViewBag.Mensaje
+
+
+***********************************
+Archivo: VerPublicacionesCliente.cshtml
+Carpeta: C:\Users\matia\Desktop\ORT\Programación 2\Obligatorio\Obligatorio\Web\Views\Cliente\VerPublicacionesCliente.cshtml
+***********************************
+@model List<Obligatorio.Publicacion>
+@{
+    ViewData["Title"] = "VerPublicacionesCliente";
+}
+
+<h1>Publicaciones disponibles</h1>
+
+@if (Model != null && Model.Count > 0)
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Nombre</th>
+                <th>Estado</th>
+                <th>Precio</th>
+                <th></th>
+            </tr>
+        </thead>
+
+        <tbody>
+            @foreach (Obligatorio.Publicacion publicacion in Model)
+            {
+                <tr>
+                    <td>@publicacion.nombre</td>
+                    <td>@publicacion.estado</td>
+                    <td>@publicacion.CalcularPrecio()</td>
+                    @if (publicacion.estado.Trim().ToUpper() == "ABIERTA" && publicacion is Obligatorio.Venta)
+                    {
+                        <td>
+                            <a href="/Cliente/Comprar/@(publicacion.id)" class="btn btn-primary">Comprar</a>
+                        </td>
+                    }
+                    @if (publicacion.estado.Trim().ToUpper() == "CERRADA" && publicacion is Obligatorio.Venta)
+                    {
+                        <td>
+                            <p>Vendido</p>
+                        </td>
+                    }
+                    @if (publicacion.estado.Trim().ToUpper() == "ABIERTA" && publicacion is Obligatorio.Subasta)
+                    {
+                            <td>
+                                <a href="/Subasta/Ofertar/@(publicacion.id)" class="btn btn-primary">Ofertar</a>
+                            </td>
+                    }
+                    @if (publicacion.estado.Trim().ToUpper() == "CERRADA" && publicacion is Obligatorio.Subasta)
+                    {
+                        <td>
+                            <p>Subasta cerrada</p>
+                        </td>
+                    }
+                </tr>
+
+            }
+        </tbody>
+    </table>
+    @ViewBag.Mensaje
+
+}
+else
+{
+    <p>No existen publicaciones</p>
+}
+***********************************
+Archivo: Index.cshtml
+Carpeta: C:\Users\matia\Desktop\ORT\Programación 2\Obligatorio\Obligatorio\Web\Views\Home\Index.cshtml
+***********************************
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Bienvenidos</h1>
+    <p>Sebastián Hohl - 327007</p>
+    <p>Matías Oreiro - 239479</p>
+    <p>Programación 2 - M2E - Liliana Pino</p>
+
+</div>
+
+***********************************
+Archivo: Login.cshtml
+Carpeta: C:\Users\matia\Desktop\ORT\Programación 2\Obligatorio\Obligatorio\Web\Views\Home\Login.cshtml
+***********************************
+
+@{
+    ViewData["Title"] = "Login";
+}
+
+<h1>Iniciar sesión</h1>
+
+<form method="post">
+
+    <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" class="form-control" id="email" name="email" />
+    </div>
+    <div class="form-group">
+        <label for="password">Password</label>
+        <input type="password" class="form-control" id="password" name="password" />
+    </div>
+    <br>
+    <input type="submit" class="btn btn-primary" value="Login"></input
+</form>
+@ViewBag.Mensaje
+
+
+***********************************
+Archivo: Privacy.cshtml
+Carpeta: C:\Users\matia\Desktop\ORT\Programación 2\Obligatorio\Obligatorio\Web\Views\Home\Privacy.cshtml
+***********************************
+@{
+    ViewData["Title"] = "Privacy Policy";
+}
+<h1>@ViewData["Title"]</h1>
+
+<p>Vamo el manya</p>
+
+***********************************
+Archivo: Error.cshtml
+Carpeta: C:\Users\matia\Desktop\ORT\Programación 2\Obligatorio\Obligatorio\Web\Views\Shared\Error.cshtml
+***********************************
+@model ErrorViewModel
+@{
+    ViewData["Title"] = "Error";
+}
+
+<h1 class="text-danger">Error.</h1>
+<h2 class="text-danger">An error occurred while processing your request.</h2>
+
+@if (Model.ShowRequestId)
+{
+    <p>
+        <strong>Request ID:</strong> <code>@Model.RequestId</code>
+    </p>
+}
+
+<h3>Development Mode</h3>
+<p>
+    Swapping to <strong>Development</strong> environment will display more detailed information about the error that occurred.
+</p>
+<p>
+    <strong>The Development environment shouldn't be enabled for deployed applications.</strong>
+    It can result in displaying sensitive information from exceptions to end users.
+    For local debugging, enable the <strong>Development</strong> environment by setting the <strong>ASPNETCORE_ENVIRONMENT</strong> environment variable to <strong>Development</strong>
+    and restarting the app.
+</p>
+
+***********************************
+Archivo: _Layout.cshtml
+Carpeta: C:\Users\matia\Desktop\ORT\Programación 2\Obligatorio\Obligatorio\Web\Views\Shared\_Layout.cshtml
+***********************************
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Web</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/Web.styles.css" asp-append-version="true" />
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+            <div class="container-fluid">
+                @if (Context.Session.GetString("usuario") == null)
+                {
+                    <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">Inicio</a>
+                }
+                @if (Context.Session.GetString("usuario") != null && Context.Session.GetString("rol").Trim().ToUpper() == "CLIENTE")
+                {
+                    <a class="navbar-brand" asp-area="" asp-controller="Cliente" asp-action="IndexCliente">Inicio</a>
+                }
+                @if (Context.Session.GetString("usuario") != null && Context.Session.GetString("rol").Trim().ToUpper() == "ADMINISTRADOR")
+                {
+                    <a class="navbar-brand" asp-area="" asp-controller="Administrador" asp-action="IndexAdmin">Inicio</a>
+                }
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+                    <ul class="navbar-nav flex-grow-1">
+                        @if (Context.Session.GetString("usuario") == null)
+                        {
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Login">Iniciar sesión</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" asp-area="" asp-controller="Cliente" asp-action="Registro">Registro</a>
+                            </li>
+
+                        }
+                        @if (Context.Session.GetString("usuario") != null && Context.Session.GetString("rol").Trim().ToUpper() == "CLIENTE")
+                        {
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" asp-area="" asp-controller="Cliente" asp-action="IndexCliente">Inicio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" asp-area="" asp-controller="Cliente" asp-action="VerPublicacionesCliente">Ver publicaciones</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" asp-area="" asp-controller="Cliente" asp-action="CargarSaldo">Cargar saldo</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Logout">Cerrar sesión</a>
+                            </li>
+                        }
+                        @if (Context.Session.GetString("usuario") != null && Context.Session.GetString("rol").Trim().ToUpper() == "ADMINISTRADOR")
+                        {
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" asp-area="" asp-controller="Administrador" asp-action="IndexAdmin">Inicio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" asp-area="" asp-controller="Administrador" asp-action="VerSubastas">Ver Subastas</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Logout">Cerrar sesión</a>
+                            </li>
+                        }
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    <footer class="border-top footer text-muted">
+        <div class="container">
+            &copy; 2024 - Web - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+        </div>
+    </footer>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>
+
+***********************************
+Archivo: _ValidationScriptsPartial.cshtml
+Carpeta: C:\Users\matia\Desktop\ORT\Programación 2\Obligatorio\Obligatorio\Web\Views\Shared\_ValidationScriptsPartial.cshtml
+***********************************
+<script src="~/lib/jquery-validation/dist/jquery.validate.min.js"></script>
+<script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"></script>
+
+***********************************
+Archivo: Ofertar.cshtml
+Carpeta: C:\Users\matia\Desktop\ORT\Programación 2\Obligatorio\Obligatorio\Web\Views\Subasta\Ofertar.cshtml
+***********************************
+@{
+    ViewData["Title"] = "Ofertar";
+}
+
+<h1>Ofertar subasta</h1>
+<form method="post">
+    <label for="monto">Monto</label>
+    <input type="number" name="monto" />
+    <br>
+    <input type="submit" class="btn btn-primary" value="Ofertar"></input
+</form>
+
+@ViewBag.Mensaje

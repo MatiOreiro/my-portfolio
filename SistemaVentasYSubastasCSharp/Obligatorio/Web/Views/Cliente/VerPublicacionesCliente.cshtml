@@ -1,0 +1,62 @@
+﻿@model List<Obligatorio.Publicacion>
+@{
+    ViewData["Title"] = "VerPublicacionesCliente";
+}
+
+<h1>Publicaciones disponibles</h1>
+
+@if (Model != null && Model.Count > 0)
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Nombre</th>
+                <th>Estado</th>
+                <th>Precio</th>
+                <th></th>
+            </tr>
+        </thead>
+
+        <tbody>
+            @foreach (Obligatorio.Publicacion publicacion in Model)
+            {
+                <tr>
+                    <td>@publicacion.nombre</td>
+                    <td>@publicacion.estado</td>
+                    <td>@publicacion.CalcularPrecio()</td>
+                    @if (publicacion.estado.Trim().ToUpper() == "ABIERTA" && publicacion is Obligatorio.Venta)
+                    {
+                        <td>
+                            <a href="/Cliente/Comprar/@(publicacion.id)" class="btn btn-primary">Comprar</a>
+                        </td>
+                    }
+                    @if (publicacion.estado.Trim().ToUpper() == "CERRADA" && publicacion is Obligatorio.Venta)
+                    {
+                        <td>
+                            <p>Vendido</p>
+                        </td>
+                    }
+                    @if (publicacion.estado.Trim().ToUpper() == "ABIERTA" && publicacion is Obligatorio.Subasta)
+                    {
+                            <td>
+                                <a href="/Subasta/Ofertar/@(publicacion.id)" class="btn btn-primary">Ofertar</a>
+                            </td>
+                    }
+                    @if (publicacion.estado.Trim().ToUpper() == "CERRADA" && publicacion is Obligatorio.Subasta)
+                    {
+                        <td>
+                            <p>Subasta cerrada</p>
+                        </td>
+                    }
+                </tr>
+
+            }
+        </tbody>
+    </table>
+    @ViewBag.Mensaje
+
+}
+else
+{
+    <p>No existen publicaciones</p>
+}

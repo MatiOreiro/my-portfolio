@@ -1,0 +1,34 @@
+﻿@model Obligatorio.MVC.Models.AgregarSeguimientoViewModel
+
+@{
+    ViewData["Title"] = "AgregarSeguimiento";
+}
+
+<h1>Agregar estado de seguimiento</h1>
+
+<h4>Envio @Model.EnvioDTO.NroTracking</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="AgregarSeguimiento">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="@Model.AgregarSeguimientoDTO.IdEnvio" value="@Model.EnvioDTO.Id"/>
+            <textarea asp-for="@Model.AgregarSeguimientoDTO.Comentario">
+
+            </textarea>
+            <div class="form-group">
+                <input type="submit" value="Añadir" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Volver a la lista</a>
+</div>
+
+@ViewBag.msg
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

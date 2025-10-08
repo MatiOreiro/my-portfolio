@@ -1,0 +1,213 @@
+[{
+  "_id": {
+    "$oid": "6854a8b3360ac94131459bb7"
+  },
+  "IdRepara": 1,
+  "Eventos": [
+    {
+      "Fecha": {
+        "$date": "2025-06-10T09:00:00.000Z"
+      },
+      "Descripcion": "Reemplazo de pieza",
+      "NotasTecnico": "Se reemplazó la placa base por una nueva compatible.",
+      "Adjuntos": [
+        {
+          "Tipo": "Imagen",
+          "NombreArchivo": "placa_base_defectuosa.jpg",
+          "URL": "https://miurl.com/imgs/placa_base_defectuosa.jpg"
+        },
+        {
+          "Tipo": "Documento",
+          "NombreArchivo": "diagnostico.pdf",
+          "URL": "https://miurl.com/docs/diagnostico.pdf"
+        }
+      ]
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "6854a8bf360ac94131459bb9"
+  },
+  "IdRepara": 2,
+  "Eventos": [
+    {
+      "Fecha": {
+        "$date": "2025-06-12T15:30:00.000Z"
+      },
+      "Descripcion": "Prueba funcional",
+      "NotasTecnico": "Se probó encendido, conectividad WiFi y Bluetooth. Todo correcto.",
+      "Adjuntos": []
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "6854a8c8360ac94131459bbb"
+  },
+  "IdRepara": 3,
+  "Eventos": [
+    {
+      "Fecha": {
+        "$date": "2025-06-13T11:45:00.000Z"
+      },
+      "Descripcion": "Cambio de carcasa",
+      "NotasTecnico": "La carcasa presentaba fisuras. Se cambió por una nueva.",
+      "Adjuntos": [
+        {
+          "Tipo": "Imagen",
+          "NombreArchivo": "carcasa_nueva.jpg",
+          "URL": "https://miurl.com/imgs/carcasa_nueva.jpg"
+        }
+      ]
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "6854a8d2360ac94131459bbd"
+  },
+  "IdRepara": 4,
+  "Eventos": [
+    {
+      "Fecha": {
+        "$date": "2025-06-14T13:00:00.000Z"
+      },
+      "Descripcion": "Inspección inicial",
+      "NotasTecnico": "Se detectó posible fallo en la placa por recalentamiento.",
+      "Adjuntos": []
+    },
+    {
+      "Fecha": {
+        "$date": "2025-06-14T14:30:00.000Z"
+      },
+      "Descripcion": "Actualización de firmware",
+      "NotasTecnico": "Se cargó firmware v2.1.5 y se reinició el dispositivo.",
+      "Adjuntos": []
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "6854a8dd360ac94131459bbf"
+  },
+  "IdRepara": 5,
+  "Eventos": [
+    {
+      "Fecha": {
+        "$date": "2025-06-15T08:15:00.000Z"
+      },
+      "Descripcion": "Limpieza interna",
+      "NotasTecnico": "Se retiró polvo de componentes internos con aire comprimido.",
+      "Adjuntos": []
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "6854a90f360ac94131459bc1"
+  },
+  "IdRepara": 6,
+  "Eventos": [
+    {
+      "Fecha": {
+        "$date": "2025-06-16T10:00:00.000Z"
+      },
+      "Descripcion": "Diagnóstico inicial",
+      "NotasTecnico": "No enciende. Se sospecha daño en la placa lógica.",
+      "Adjuntos": []
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "6854a919360ac94131459bc3"
+  },
+  "IdRepara": 7,
+  "Eventos": [
+    {
+      "Fecha": {
+        "$date": "2025-06-17T09:30:00.000Z"
+      },
+      "Descripcion": "Cambio de pantalla",
+      "NotasTecnico": "Pantalla rota por caída. Se instaló repuesto original.",
+      "Adjuntos": [
+        {
+          "Tipo": "Imagen",
+          "NombreArchivo": "pantalla_rota.jpg",
+          "URL": "https://miurl.com/imgs/pantalla_rota.jpg"
+        }
+      ]
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "6854a92a360ac94131459bc5"
+  },
+  "IdRepara": 8,
+  "Eventos": [
+    {
+      "Fecha": {
+        "$date": "2025-06-18T14:15:00.000Z"
+      },
+      "Descripcion": "Reemplazo de batería",
+      "NotasTecnico": "La batería tenía hinchazón visible. Se reemplazó por unidad nueva.",
+      "Adjuntos": [
+        {
+          "Tipo": "Documento",
+          "NombreArchivo": "certificado_bateria.pdf",
+          "URL": "https://miurl.com/docs/certificado_bateria.pdf"
+        }
+      ]
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "6854a935360ac94131459bc7"
+  },
+  "IdRepara": 9,
+  "Eventos": [
+    {
+      "Fecha": {
+        "$date": "2025-06-18T10:00:00.000Z"
+      },
+      "Descripcion": "Inspección visual",
+      "NotasTecnico": "Conector de carga dañado, oxidación leve en placa.",
+      "Adjuntos": []
+    },
+    {
+      "Fecha": {
+        "$date": "2025-06-18T11:00:00.000Z"
+      },
+      "Descripcion": "Cambio de conector",
+      "NotasTecnico": "Se retiró y soldó nuevo conector de carga tipo C.",
+      "Adjuntos": []
+    },
+    {
+      "Fecha": {
+        "$date": "2025-06-18T13:30:00.000Z"
+      },
+      "Descripcion": "Pruebas de carga",
+      "NotasTecnico": "Carga estable en 5V. Equipo operativo.",
+      "Adjuntos": []
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "6854a940360ac94131459bc9"
+  },
+  "IdRepara": 10,
+  "Eventos": [
+    {
+      "Fecha": {
+        "$date": "2025-06-19T09:00:00.000Z"
+      },
+      "Descripcion": "Rechazo de servicio",
+      "NotasTecnico": "El cliente rechazó el presupuesto. No se realizó ninguna intervención.",
+      "Adjuntos": []
+    }
+  ]
+}]

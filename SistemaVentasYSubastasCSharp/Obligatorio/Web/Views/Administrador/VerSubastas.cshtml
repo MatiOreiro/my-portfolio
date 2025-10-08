@@ -1,0 +1,50 @@
+﻿@model List<Obligatorio.Subasta>
+
+@{
+    ViewData["Title"] = "VerSubastas";
+}
+
+<h1>Todas las subastas</h1>
+
+@if (Model != null && Model.Count > 0)
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Nombre</th>
+                <th>Fecha</th>
+                <th>Estado</th>
+                <th>Precio</th>
+                <th></th>
+            </tr>
+        </thead>
+
+        <tbody>
+            @foreach (Obligatorio.Subasta subasta in Model)
+            {
+                <tr>
+                    <td>@subasta.nombre</td>
+                    <td>@subasta.fecha.ToShortDateString()</td>
+                    <td>@subasta.estado</td>
+                    <td>@subasta.CalcularPrecio()</td>
+                    @if (subasta.estado.Trim().ToUpper() == "ABIERTA" && subasta is Obligatorio.Subasta)
+                    {
+                        <td>
+                            <a href="/Subasta/CerrarSubasta/@(subasta.id)" class="btn btn-primary">Cerrar subasta</a>
+                        </td>
+                    }
+                    @if (subasta.estado.Trim().ToUpper() == "CERRADA" && subasta is Obligatorio.Subasta)
+                    {
+                        <td>
+                            <p>Subasta cerrada</p>
+                        </td>
+                    }
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+else
+{
+    <p>No existen publicaciones</p>
+}

@@ -1,0 +1,594 @@
+:root{
+    --colorNegro: #000000;
+    --colorOscuro: #03071E;
+    --colorRojoOscuro: #9D0208;
+    --colorRojoClaro: #D00000;
+    --colorRojoClarito: #ff9999;
+    --colorAmarilloClaro: #FFBA08;
+    --colorAmarilloOscuro: #FAA307;
+    --colorNaranja: #E85D04;
+    --colorBlanco: #FFFFFF;
+    --colorSalmon: #F9BEC7;
+    --colorRosadoFuerte: #FF0A54;
+    --colorGris: #ADB5BD;
+    --colorVioleta: #231942;
+    --colorVioletaClaro: #5E548E;
+    --colorLavanda: #9F86C0;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: var(--colorNegro);
+    font-family: "Kanit", sans-serif;
+    font-style: normal;
+}
+
+header{
+    width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--colorNegro);
+    align-items: center;
+    height: 60px;
+}
+
+.titulos{
+    font-size: 40px;
+}
+
+header img{
+    height: 80%;
+    margin: 5px 5px;
+}
+
+
+header ul{
+    list-style-type: none;
+    display: inline;
+    text-align: center;
+    overflow: hidden;
+}
+
+header li{
+    float: left;
+}
+
+header li a{
+    display: block;
+    color: var(--colorBlanco);
+    font-size: 22px;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+header li a:hover{
+    background-color: var(--colorRojoClaro);
+}
+
+.divHeader{
+    background-color: black;
+    display: flex;
+    justify-content: center;
+}
+
+#video{
+    position: relative;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+
+#divBienvenidaGP{
+    position: absolute;
+    top: calc(50% + 60px);
+    text-align: center;
+    font-weight: 700;
+    font-size: 50px;
+    color: var(--colorBlanco);
+    width: 100%;
+    text-shadow: 2px 2px 4px var(--colorRojoOscuro);
+}
+
+#divBienvenidaGP h2{
+    font-size: 20px;
+    
+}
+
+
+#sectionEventoGP{
+    margin: -6px auto;
+    background-color: var(--colorRojoOscuro);    
+}
+
+.eventoGP{
+    width: 1200px;
+    margin: 0 auto;
+    padding: 50px 0;
+}
+
+.articleEvento{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    align-items: start;
+}
+
+#imgGP2023{
+    margin: 50px 15px 50px 50px;
+}
+
+#divElEvento{
+    margin: 35px 50px 50px 30px;
+    color: var(--colorSalmon);
+}
+
+#divElEvento div{
+    float: left;
+    display: block;
+
+}
+
+#resumenEvento{
+    margin-top: 10px;
+}
+
+#fechaEvento{
+    margin: 30px 30px 30px 0;
+}
+
+#lugarEvento{
+    margin: 30px 0 30px 30px;
+}
+
+#divElEvento h2, h3{
+    color: var(--colorBlanco);
+}
+
+#sectionServicios{
+    background-color: var(--colorRojoClaro);
+}
+
+.classServicios{
+    width: 1440px;
+    margin: 0 auto;
+    padding: 70px 0;
+}
+
+.divPadreServicios{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    flex-direction: row;
+    gap: 50px;
+    margin-top: 70px;
+}
+
+#textosServicios{
+    color: var(--colorBlanco);
+}
+
+.divPadreServicios a, a:hover{
+    color: black;
+}
+
+.divPadreServicios div{
+    border: 1px solid var(--colorRosadoFuerte);
+    border-radius: 5px;
+    background-color: var(--colorSalmon);
+    padding: 20px 20px 80px 20px;
+    width: calc(100% /  3 - 80px);
+    height: 400px;
+}
+
+.divPadreServicios div h3{
+    color: var(--colorNegro);
+}
+
+.imgServicios{
+    width: 100%;
+    height: calc(100% / 2);
+}
+
+#sectionCronograma{
+    background-color: var(--colorGris);
+    margin-bottom: 30px;
+    
+}
+
+.classCronograma{
+    width: 1200px;
+    margin: 0 auto;
+    padding: 70px 0;
+
+}
+
+.introduccionCronograma{
+    margin: 20px auto;
+    text-align: center;
+    width: 50%;
+}
+
+.introduccionCronograma h2{
+    color: var(--colorRojoClaro);
+}
+
+.introduccionCronograma p{
+    color: var(--colorNegro);
+}
+
+.tableCronograma{
+    table-layout: fixed;
+    border-collapse: collapse;
+    width: 80%;
+    height: 600px;
+    margin: 50px auto;
+}
+
+.tableCronograma th{
+    background-color: var(--colorRojoClaro);
+    height: 70px;
+    font-size: 25px;
+    color: var(--colorBlanco);
+}
+
+.tableCronograma th, td{
+    text-align: left;
+    padding-left: 30px;
+}
+
+.tableCronograma th:first-child, td:first-child{
+    border: none;
+    border-radius: 5px 0 0 5px;
+}
+
+.tableCronograma th:last-child, td:last-child{
+    border: none;
+    border-radius: 0 5px 5px 0;
+}
+
+.classImagenYEventoCronograma{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* .tableCronograma th:nth-child(1), td:nth-child(1){
+    width: 10%;
+}
+
+.tableCronograma th:nth-child(2), td:nth-child(2){
+    width: 30%;
+}
+
+.tableCronograma th:nth-child(3), td:nth-child(3){
+    width: 30%;
+} */
+
+
+
+#bodyTableCronograma{
+    font-size: 20px;
+}
+
+#bodyTableCronograma tr{
+    height: 100px;    
+}
+
+#bodyTableCronograma td{
+    vertical-align: middle;
+}
+
+#bodyTableCronograma img{
+    text-align: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 20px;
+}
+
+tbody tr:nth-child(odd){
+    background-color: var(--colorGris);
+}
+
+tbody tr:nth-child(even){
+    background-color: var(--colorBlanco);
+}
+
+.classImagenesCronogramaGP{
+    width: 1440px;
+    margin: 0 auto;
+    color: #ccc;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(3, 33%);
+    grid-template-rows: repeat(3, 400px);
+    grid-gap: 15px;
+    padding: 50px 0;
+}
+
+
+.classImagenesCronogramaGP h3{
+    position: relative;
+    max-width: 150px;
+    top: 95%;
+    left: 72%;
+    text-shadow: 2px 2px 4px var(--colorRojoOscuro);
+    font-size: 30px;
+}
+
+.classImagenesCronogramaGP img{
+    position: relative;
+    max-width: 100%;
+    max-height: 100%;
+    overflow: hidden;
+    
+}
+
+.classImagenesCronogramaGP article:nth-child(1){
+    background-image: url('../media/imagengridvertical.png');
+    background-size: cover;
+    background-position: center;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+.classImagenesCronogramaGP article:nth-of-type(2){
+    background-image: url('../media/elpodio.webp');
+    background-size: cover;
+    background-position: top;
+    grid-column-start: 2;
+    grid-column-end: 4;
+}
+
+.classImagenesCronogramaGP article:nth-of-type(2) h3{
+    top: 90%;
+    left: 87%;
+}
+
+
+.classImagenesCronogramaGP article:nth-of-type(3){
+    background-image: url('../media/layoutcircuito.webp');
+}
+
+.classImagenesCronogramaGP article:nth-of-type(4){
+    background-image: url('../media/eltrofeo.webp');
+    background-size: cover;
+    background-position: top;
+    grid-column: 3;
+    grid-row-start: 2;
+    grid-row-end: 4;
+}
+
+.classImagenesCronogramaGP article:nth-of-type(4) h3{
+    top: 94%;
+    left: 72%;
+}
+
+
+.classImagenesCronogramaGP article:nth-of-type(5){
+    background-image: url('../media/celebridades.webp');
+    background-position: center;
+    background-size: cover;
+}
+
+.classImagenesCronogramaGP article:nth-of-type(6){
+    background-image: url('../media/ferrari.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+#sectionTickets{
+    background-color: var(--colorAmarilloOscuro);
+    margin-top: -31px;
+    padding: 30px 0;
+}
+
+.classTickets{
+    width: 1200px;
+    margin: 0px auto;
+}
+
+.classTickets h2{
+    text-align: center;
+    color: var(--colorNegro);
+    margin: 50px;
+}
+
+#divPadreTickets{
+    margin: 20px 0;
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+#divPadreTickets article{
+    width: 400px;
+    height: 300px;
+    padding: 20px;
+    background-color: var(--colorAmarilloClaro);
+    border: 1px solid var(--colorNegro);
+    border-radius: 5px;
+}
+
+#divPadreTickets article .divContenidoTickets{
+    display: flex;
+    height: 80%;
+}
+
+.tipoEntradaYPrecio{
+    flex: 1;
+    display: inline;
+}
+
+.tipoEntradaYPrecio h3{
+    color: var(--colorNegro);
+    font-size: 30px;
+}
+
+.btnComprarTickets{
+    margin: 20px 0;
+    width: 100%;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--colorNaranja);
+    font-family: "Kanit", sans-serif;
+    font-style: normal;
+}
+
+.btnComprarTickets:hover{
+    background-color: var(--colorRojoClaro);
+    color: var(--colorBlanco);
+}
+
+#divPadreTickets ul{
+    list-style-position: inside;
+    flex: 1;
+    list-style-image: url('../media/f1logonegro.png');
+    
+}
+
+#sectionNovedades{
+    background-color: var(--colorBlanco);
+    padding: 30px 0;
+}
+
+.classNovedades{
+    width: 1200px;
+    margin: 0 auto;
+}
+
+#divPadreNovedades{
+    display: flex;
+    gap: 50px;
+}
+
+#divPadreNovedades article{
+    padding: 20px;
+}
+
+#articleNovedades{
+    flex: 2;
+}
+
+#articleNovedades {
+    flex: 2;
+}
+
+#articleRedesSociales{
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+}
+
+#seguirEnRedesSociales{
+    border: 1px solid black ;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: var(--colorGris);
+    text-align: center;
+    align-content: center;
+    flex: 1;
+}
+
+#formSuscribirseNovedades p{
+    margin-top: 50px;
+    font-size: 25px;
+}
+
+#formSuscribirseNovedades input[type="text"], input[type="email"]{
+    width: 100%;
+    height: 40px;
+    border: 1px solid grey;
+    border-radius: 5px;
+}
+
+#formSuscribirseNovedades input[type="submit"]{
+    width: 100%;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--colorRojoOscuro);
+    color: var(--colorBlanco);
+    font-family: "Kanit", sans-serif;
+    font-style: normal;
+}
+
+#formSuscribirseNovedades input[type="submit"]:hover{
+    background-color: var(--colorRojoClaro);
+    cursor: pointer;
+}
+
+input:focus{
+    background-color: var(--colorRojoClarito);
+    color: black;
+}
+
+#formSuscribirseNovedades label[for="checkboxAceptarTyS"]{
+    color: red;
+    margin-top: 50px;
+}
+
+#formSuscribirseNovedades a, a:hover{
+    color: var(--colorNegro);
+}
+
+
+#promocionFIA{
+    text-align: center;
+    flex: 2;
+}
+
+.fiaLogo{
+    width: 300px;
+    opacity: 0.3;
+}
+
+#seguirEnRedesSociales h3{
+    color: black;
+    font-size: 30px;
+    margin: 10px auto;
+}
+
+#anclasRedesSociales{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    align-items: center;
+    align-self: flex-end;
+    justify-content: center;
+    gap: 30px;
+}
+
+#anclasRedesSociales img{
+    width: 60px;
+    height: 60px;
+}
+
+footer{
+    background-color: var(--colorNegro);
+    color: var(--colorAmarilloClaro);
+    text-align: center;
+    padding: 20px;
+    font-size: 20px;
+}
+
+
+
+
+
+
+
+
+

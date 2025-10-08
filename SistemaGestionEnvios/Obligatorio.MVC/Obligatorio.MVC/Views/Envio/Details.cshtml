@@ -1,0 +1,73 @@
+﻿@model Obligatorio.MVC.Models.MostrarComentariosViewModel
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Detalles</h1>
+
+<div>
+    <h4>Envio n° @Model.EnvioDTO.NroTracking</h4>
+    <hr />
+    <dl class="row">
+
+        <div>
+            <h2>Detalles</h2>
+                <dl>
+
+                    <dt ="col-sm-2">Número de Tracking</dt>
+                    <dd = "col-sm-10" > @Model.EnvioDTO.NroTracking </dd >
+
+                    <dt = "col-sm-2" > Cliente </dt >
+                    <dd = "col-sm-10" > @Model.EnvioDTO.EmailCliente</dd >
+
+                    <dt = "col-sm-2" > Estado </dt >
+                    <dd = "col-sm-10" > @Model.EnvioDTO.Estado.ToString() </dd >
+
+                    @if (Model.EnvioDTO.TipoEnvio.Equals("urgente"))
+                    {
+                        <dt ="col-sm-2"> Dirección </dt>
+                        <dd ="col-sm-10"> @Model.EnvioDTO.Direccion </dd>
+
+                        <dt ="col-sm-2"> Valor </dt>
+                        <dd ="col-sm-10"> @Model.EnvioDTO.Valor </dd>
+                    }
+
+                </dl>
+
+        </div>
+        <div >
+            <h4 > Seguimiento </h4 >
+            @if(Model.Comentarios != null && Model.Comentarios.Any())
+            {
+                <table = "table" >
+                    <thead >
+                        <tr >
+                            <th > Fecha </th >
+                            <th > Comentario </th >
+                        </tr >
+                    </thead >
+                    <tbody >
+                        @foreach(var item in Model.Comentarios)
+                        {
+                            <tr >
+                                <td > @item.Fecha </td >
+                                <td > @item.Comentario </td >
+                            </tr>
+                        }
+
+                    </tbody >
+                </table >
+            }
+            else
+            {
+                <p>No hay seguimientos para este envío.</p>
+            }
+        </div >
+
+
+    </dl>
+</div>
+<div>
+    <a asp-action="Index">Volver a la lista</a>
+</div>
